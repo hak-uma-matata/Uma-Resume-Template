@@ -1,0 +1,248 @@
+%-------------------------
+% Resume in Latex
+% Author : Uma Anand
+% Based off of: Jake's Resume @ https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+%\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+%\usepackage[sfdefault]{noto-sans}
+
+
+% serif
+%\usepackage[bitstream-charter]{mathdesign}
+%\usepackage{clara}
+%\usepackage{cochineal}
+%\usepackage[light]{CrimsonPro}
+%\usepackage{domitian}
+%\usepackage{mathpazo}
+%\usepackage{ETbb}
+%\usepackage{fbb}
+%\usepackage{kpfonts}
+%\usepackage[default,regular,black]{sourceserifpro}
+%\usepackage{XCharter}
+
+\usepackage{clara}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape First Last} \\ \vspace{1pt} \footnotesize (pro/noun) \\ \vspace{5pt}
+    \small {\faPhone\hspace{0.5em}(123)-456-7890} $|$ \href{mailto:xyz@gmail.com}{\faEnvelope\hspace{0.5em}xyz@gmail.com} $|$ 
+    \href{https://linkedin.com/in/first-last}{\faLinkedinSquare\hspace{0.5em}{first-last}}
+ $|$
+    \href{https://github.com/first-last}{\faGithub\hspace{0.5em}{first-last}} $|$ {\faHome\hspace{0.5em}US Citizen}
+\end{center}
+
+%-----------ABOUT-----------
+\section{About}
+\leftskip=10pt
+\small{ I am a freshman/sophomore/junior/senior at the XYZ University. I have experience with so and so technologies. This experience stems from numerous projects and multiple years of so and so. I have previously worked in many areas like so and so. I am passionate about so and so, and am looking for summer internships in this area.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {XYZ University}{May 20XX}
+      {B.S. in Subject} {City, SA}
+  \resumeItemListStart
+    \resumeItem{Overall GPA: 4.0/4.0}
+    \resumeItem{Concentrations: Concentration and Concentration}
+    \resumeItem{Relevant Courses: Course Title, Course Title}
+  \resumeItemListEnd
+  \resumeSubheading
+      {XYZ University}{May 20XX}
+      {B.S. in Subject} {City, SA}
+  \resumeItemListStart
+    \resumeItem{Overall GPA: 4.0/4.0}
+    \resumeItem{Concentrations: Concentration and Concentration}
+    \resumeItem{Relevant Courses: Course Title, Course Title}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Python, C, MySQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks and Tools}{: Git, React, Node, Next.js, JUnits, NPM, MongoDB, Figma, Adobe Photoshop, ProcessingJS} \\
+
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience And Involvement}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Position}{Month 20XX -- Month 20XX}
+      {Company Name}{City, SA}
+      \resumeItemListStart
+        \resumeItem{This is what I did at the company}
+        \resumeItem{This is why what I did in the company is important}
+        \resumeItem{Additional Info}
+      \resumeItemListEnd
+
+      \vspace{2pt}
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Position}{Month 20XX -- Month 20XX}
+      {Company Name}{City, SA}
+      \resumeItemListStart
+        \resumeItem{This is what I did at the company}
+        \resumeItem{This is why what I did in the company is important}
+        \resumeItem{Additional Info}
+      \resumeItemListEnd
+
+\vspace{2pt}
+    \resumeSubheading
+      {Position}{Month 20XX -- Month 20XX}
+      {Company Name}{City, SA}
+      \resumeItemListStart
+        \resumeItem{This is what I did at the company}
+        \resumeItem{This is why what I did in the company is important}
+        \resumeItem{Additional Info}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {\textbf{Project Name} $|$ \emph{Technical Skills used}}{Month 20XX - Month 20XX}
+          \resumeItemListStart
+            \resumeItem{This is what the project did}
+            \resumeItem{Why what the project did is important}
+            \resumeItem{Aditional features}
+            \resumeItem {\href{https://github.com/...}{\underline{Link to project}}}
+          \resumeItemListEnd
+        \vspace{2pt}
+      \resumeProjectHeading
+          {\textbf{Project Name} $|$ \emph{Technical Skills used}}{Month 20XX - Month 20XX}
+          \resumeItemListStart
+            \resumeItem{This is what the project did}
+            \resumeItem{Why what the project did is important}
+            \resumeItem{Aditional features}
+            \resumeItem {\href{https://github.com/...}{\underline{Link to project}}}
+          \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+
+
+%
+
+
+
+%-------------------------------------------
+\end{document}
